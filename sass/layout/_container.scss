@@ -1,0 +1,16 @@
+.container {
+    margin: 20px auto;
+    max-width: 120rem;
+    background-color: $color-primary;
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+
+    display: grid;
+    grid-template-rows: minmax(15rem, 20vh) min-content min-content min-content;
+    grid-template-columns: 70% 30%;
+    border-radius: 10px;
+
+    @include respond(tab-port) { // width < 900?
+        margin: auto;
+    }
+
+}
